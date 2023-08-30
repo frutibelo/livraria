@@ -1,3 +1,15 @@
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* 50% - 40px */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+ 
  @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Rubik&display=swap');
 
 *{
@@ -70,12 +82,12 @@ main {
 }
 
 .card button:hover {
-    background-color: #555;
+    background-color: #5b87c0;
 }
 
 
 footer {
-    background-color: #333;
+    background-color: #171d3f;
     color: #fff;
     text-align: center;
     padding: 1rem;
