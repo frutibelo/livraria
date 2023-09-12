@@ -65,8 +65,60 @@
                         </div>
                     </div>
                     
-            
+                    <div class="input-container">
+                        <label for="isbn">ISBN</label>
+                        <input type="text" name="isbn" id="isbn" placeholder="ISBN do livro" pattern="\d{3}-\d{10}" required>
+                    </div>
+                    
+                    <div class="input-container">
+                        <label for="paginas">Páginas</label>
+                        <input type="number" name="paginas" id="paginas" placeholder="Número de páginas" required>
+                    </div>
 
+                    <div class="input-container">
+                        <label for="categoria">Categoria</label>
+                        <select name="categoria" id="categoria" required>
+                            <option value="">Selecione</option>
+                            <option value="Ação">Ação</option>
+                            <option value="Aventura">Aventura</option>
+                            <option value="Comédia">Drama</option>
+                            <option value="Ficção Cietífica">Ficção Científica</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Suspense">Suspense</option>
+                            <option value="Terror">Terror</option>
+                        </select>
+                    </div>
+
+                    <div class="input-container">
+                        <label>Estado do Livro</label>
+                        <div class="radio-group">
+                            <input type="radio" name="situacao" id="novo" value="Novo" required checked>
+                            <label for="novo">Novo</label>
+
+                            <input type="radio" name="situacao" id="usado" value="Usado" required>
+                            <label for="usado">Usado</label>
+                        </div>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="resumo">Resumo</label>
+                        <textarea name="resumo" id="resumo" placeholder="Resumo do Livro" rows="5" required></textarea>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="capa">Capa</label>
+                        <input type="file" name="capa" id="capa" accept="image/*">
+                    </div>
+
+                    <div class="actions">
+                        <button type="submit">Cadastrar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+
+                    <footer>
+                        <p>&copy; 2023 Livraria Fantástica | Criado por Seu Nome</p>
+                    </footer>
+                    
                 </fieldset>
             </form>
         </section>
